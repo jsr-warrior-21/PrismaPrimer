@@ -11,3 +11,11 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+// All model(bluePrint) will be there
+
+model User{
+  id Int @id @default(autoincrement())
+  name String @default("Arvind")
+  email String @unique
+}
