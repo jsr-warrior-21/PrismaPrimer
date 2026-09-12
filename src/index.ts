@@ -60,7 +60,7 @@ app.get("/user", async (_req: Request, res: Response) => {
   
   if (!response) {
     return res.status(404).json({
-      message: "User not found",
+      message: "User not found in db",
     });
   }
 
